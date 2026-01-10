@@ -3,9 +3,7 @@ title: "Программирование на Go (2026)"
 author: "Kot-off"
 locale: "ru"
 
-# Если репозиторий называется golang-fundamentals-2026.io
-# то в baseurl пишем именно это имя со слэшем в начале
-baseurl: "/golang-fundamentals-2026.io"
+baseurl: "/golang-fundamentals-2026.io" 
 url: "https://kot-off.github.io"
 
 exclude:
