@@ -1,9 +1,12 @@
-# Site
+# Site settings
 title: "Программирование на Go (2026)"
 author: "Kot-off"
 locale: "ru"
-url: ""
-baseurl: ""
+
+# Если репозиторий называется golang-fundamentals-2026.io
+# то в baseurl пишем именно это имя со слэшем в начале
+baseurl: "/golang-fundamentals-2026.io"
+url: "https://kot-off.github.io"
 
 exclude:
   - vendor
@@ -11,6 +14,7 @@ exclude:
   - Gemfile.lock
   - fabfile.py
   - .sass-cache
+  - node_modules
 
 # Collections
 collections:
@@ -18,18 +22,18 @@ collections:
     output: true
     permalink: '/:name.html'
 
-# Build
+# Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title.html
 
-# Assets (Объединенный блок)
+# Assets configuration
 assets:
   js_compressor: uglifier
   css_compressor: sass
   cache: false
 
-# Markdown settings
+# Markdown parsing
 kramdown:
   input: GFM
   syntax_highlighter: rouge

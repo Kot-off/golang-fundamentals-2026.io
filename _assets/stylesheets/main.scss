@@ -17,76 +17,74 @@
   margin-bottom: 50px;
 }
 
-  .intro_heading {
-    margin-bottom: 0;
-    line-height: 1;
-  }
+.intro_heading {
+  margin-bottom: 0;
+  line-height: 1;
+}
 
-  .intro_author {
-    font-size: 0.8em;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
+.intro_author {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
 
 .chapters {
   margin-bottom: 50px;
 }
 
-.chapter {}
+.chapter_navs {
+  margin-bottom: 15px;
+}
 
-  .chapter_navs {
-    margin-bottom: 15px;
+.chapter_back {
+  font-size: 0.9em;
+  position: relative;
+  padding-left: 1.3em;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "←";
+    top: -0.2em;
+    left: 0;
   }
-
-  .chapter_back {
-    font-size: 0.9em;
-    position: relative;
-    padding-left: 1.3em;
-
-    &::before {
-      position: absolute;
-      content: "←";
-      top: -0.2em;
-      left: 0;
-    }
-  }
+}
 
 .download {
   margin-bottom: 50px;
 }
 
-  .download_wrapper {
-    margin-bottom: 10px;
-  }
+.download_wrapper {
+  margin-bottom: 10px;
+}
 
-  .download_btn {
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    border: 1px solid #2E6DA4;
-    box-sizing: border-box;
-    text-decoration: none;
-    display: inline-block;
-    background: #337AB7;
-    border-radius: 2px;
-    margin-right: 10px;
-    padding: 5px 15px;
+.download_btn {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  border: 1px solid #2E6DA4;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  background: #337AB7;
+  border-radius: 2px;
+  margin-right: 10px;
+  padding: 5px 15px;
+  color: #FFF;
+
+  &:hover {
+    background: #2E6DA4;
     color: #FFF;
-
-    &:hover {
-      background: #2E6DA4;
-      color: #FFF;
-    }
-
-    @media screen and (max-width: 640px) {
-      margin-bottom: 10px;
-      text-align: center;
-      display: block;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
   }
 
+  @media screen and (max-width: 640px) {
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 .content {
   padding-top: 30px;
@@ -104,26 +102,27 @@
   bottom: 0;
   right: 0;
   left: 0;
-}
-
+  
   .footer_container {
     padding-top: 10px;
     padding-bottom: 10px;
     p { margin-bottom: 0; }
   }
+}
 
 .prevnext {
   overflow: hidden;
+  margin-top: 30px;
 }
 
-  .prevnext_item {
-    &.-prev {
-      float: left;
-    }
-    &.-next {
-      float: right;
-    }
+.prevnext_item {
+  &.-prev {
+    float: left;
   }
+  &.-next {
+    float: right;
+  }
+}
 
 .github-ribbon {
   @media screen and (max-width: 640px) {
@@ -135,13 +134,8 @@
   font-size: 0.9rem;
   padding: 20px 0;
 
-  hr {
-    display: none;
-  }
-
-  ol {
-    margin-bottom: 0;
-  }
+  hr { display: none; }
+  ol { margin-bottom: 0; }
 }
 
 .ads {
