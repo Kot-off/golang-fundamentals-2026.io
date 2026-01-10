@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="intro">
+  <div class="intro_author">Kot-off</div>
+  <h1 class="intro_heading">Программирование на&nbsp;Go (2026)</h1>
+</div>
+
+<div class="chapters">
+  <ol class="capters_list">
+    {% for chapter in site.book %}
+      <li class="chapters_item">
+        <a class="chapters_item_link" href="{{ chapter.url }}">{{ chapter.title }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<div class="download">
+  <div class="download_wrapper">
+    <a class="download_btn" href="https://go.dev/dl/" target="_blank">
+      <span class="download_btn_text">Загрузить Go</span>
+    </a>
+    <a class="download_btn" href="https://go.dev/doc/" target="_blank">
+      <span class="download_btn_text">Документация</span>
+    </a>
+  </div>
+
+  <p>Есть вопросы? Заходите в официальное сообщество в <a href="https://t.me/golang_ru" target="_blank">Telegram</a> или читайте профильные статьи на <a href="https://habr.com/ru/hub/go/" target="_blank">Habr</a>.</p>
+</div>
+
+{% include advert.html slot="6541630584" %}

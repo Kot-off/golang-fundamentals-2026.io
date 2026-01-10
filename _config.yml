@@ -1,0 +1,35 @@
+# Site
+title: "Программирование на Go (2026)"
+author: "Kot-off"
+locale: "ru"
+url: ""
+baseurl: ""
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - fabfile.py
+  - .sass-cache
+
+# Collections
+collections:
+  book:
+    output: true
+    permalink: '/:name.html'
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:title.html
+
+# Assets (Объединенный блок)
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
+  cache: false
+
+# Markdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

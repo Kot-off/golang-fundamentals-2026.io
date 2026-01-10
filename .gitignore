@@ -1,0 +1,8 @@
+.sass-cache
+.bundle
+build
+vendor
+Gemfile.lock
+.idea/
+*.pyc
+_site
