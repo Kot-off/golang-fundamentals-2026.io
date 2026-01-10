@@ -2,9 +2,11 @@
 title: "Программирование на Go (2026)"
 author: "Kot-off"
 locale: "ru"
-
-baseurl: "/golang-fundamentals-2026.io" 
 url: "https://kot-off.github.io"
+baseurl: "/golang-fundamentals-2026.io"
+
+# Отключаем сторонние темы, чтобы работали наши стили
+theme: null
 
 exclude:
   - vendor
@@ -25,13 +27,11 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title.html
 
-# Assets configuration
-assets:
-  js_compressor: uglifier
-  css_compressor: sass
-  cache: false
+# Стандартные настройки SASS для Jekyll
+sass:
+  style: compressed
+  sass_dir: assets/stylesheets
 
-# Markdown parsing
 kramdown:
   input: GFM
   syntax_highlighter: rouge

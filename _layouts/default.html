@@ -1,36 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   {% include head.html %}
 
   <body class="page">
-    {% include header.html %}
-
     <main class="content">
-      <div class="content_containter container">
+      <div class="content_container container">
         {{ content }}
       </div>
     </main>
 
     {% include footer.html %}
     {% include ribbon.html %}
-    {% include counters.html %}
   </body>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
-  <script type="text/javascript">
-    function hlt() {
-      var nodes = document.querySelectorAll('pre code');
-      nodes.forEach(function(el){
-        var src = el.innerText;
-        var res = hljs.highlightAuto(src, ['golang', 'shell']);
-        el.innerHTML = res.value;
-      });
-    }
-    
-    window.onload=function(){
-      hlt();
-    }
-  </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+      });
+    });
+  </script>
 </html>
