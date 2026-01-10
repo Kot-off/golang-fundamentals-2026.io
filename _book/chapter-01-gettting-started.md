@@ -1,5 +1,5 @@
 ---
-title:  "Настройка Go"
+title:  "Приступая к работе"
 layout: "chapter"
 ---
 
