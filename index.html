@@ -11,7 +11,7 @@ layout: default
   <ol class="capters_list">
     {% for chapter in site.book %}
       <li class="chapters_item">
-        <a class="chapters_item_link" href="{{ chapter.url }}">{{ chapter.title }}</a>
+        <a class="chapters_item_link" href="{{ site.baseurl }}{{ chapter.url }}">{{ chapter.title }}</a>
       </li>
     {% endfor %}
   </ol>
