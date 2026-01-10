@@ -1,14 +1,14 @@
 <div class="prevnext">
   {% if page.previous %}
     <a class="prevnext_item -prev" href="{{ site.baseurl }}{{ page.previous.url }}">
-      <span class="prevnext_label">Назад</span>
+      <span class="prevnext_label">← Назад</span>
       <span class="prevnext_title">{{ page.previous.title }}</span>
     </a>
   {% endif %}
 
   {% if page.next %}
     <a class="prevnext_item -next" href="{{ site.baseurl }}{{ page.next.url }}">
-      <span class="prevnext_label">Вперед</span>
+      <span class="prevnext_label">Вперед →</span>
       <span class="prevnext_title">{{ page.next.title }}</span>
     </a>
   {% endif %}
