@@ -1,5 +1,5 @@
 ---
-title:  "Ваша первая программа"
+title:  "Настройка Go"
 layout: "chapter"
 ---
 
