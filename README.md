@@ -20,7 +20,7 @@
 14. [Дальнейшие шаги](_book/chapter-14-next-steps.md)
 
 ## 🛠 Как читать
-* **Online:** Книга доступна в виде удобного сайта: [kot-off.github.io/golang-fundamentals-2026/](https://github.com/Kot-off/golang-fundamentals-2026.io/)
+* **Online:** Книга доступна в виде удобного сайта: [https://kot-off.github.io/golang-fundamentals-2026.io/](https://kot-off.github.io/golang-fundamentals-2026.io/)
 * **Obsidian:** Клонируйте репозиторий и откройте его как Vault. Все файлы оптимизированы для связей и заметок.
 * **GitHub:** Переходите по ссылкам в оглавлении выше для быстрого чтения прямо в браузере.
 
