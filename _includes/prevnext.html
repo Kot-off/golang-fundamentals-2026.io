@@ -1,16 +1,15 @@
-{% for chapter in site.book %}
-  {% if chapter.url == page.url %}
-    {% assign next = forloop.index0 | plus: 1 %}
-    {% assign prev = forloop.index0 | minus: 1 %}
-  {% endif %}
-{% endfor %}
-
 <div class="prevnext">
-  {% if site.book[prev] %}
-    <div class="prevnext_item -prev">&larr; <a href="{{ site.book[prev].url }}">{{ site.book[prev].title }}</a></div>
+  {% if page.previous %}
+    <a class="prevnext_item -prev" href="{{ site.baseurl }}{{ page.previous.url }}">
+      <span class="prevnext_label">Назад</span>
+      <span class="prevnext_title">{{ page.previous.title }}</span>
+    </a>
   {% endif %}
 
-  {% if site.book[next] %}
-    <div class="prevnext_item -next"><a href="{{ site.book[next].url }}">{{ site.book[next].title }}</a> &rarr;</div>
+  {% if page.next %}
+    <a class="prevnext_item -next" href="{{ site.baseurl }}{{ page.next.url }}">
+      <span class="prevnext_label">Вперед</span>
+      <span class="prevnext_title">{{ page.next.title }}</span>
+    </a>
   {% endif %}
 </div>
