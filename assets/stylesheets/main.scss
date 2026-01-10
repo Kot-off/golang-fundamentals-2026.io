@@ -122,17 +122,47 @@
 }
 
 .prevnext {
-  overflow: hidden;
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; // Расталкивает кнопки по краям (лево и право)
+  align-items: flex-start;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; // Добавим тонкую линию сверху для отделения от текста
 }
 
 .prevnext_item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; // Текст "Назад" будет над названием главы
+  max-width: 45%; // Чтобы длинные названия не наезжали друг на друга
+
   &.-prev {
-    float: left;
+    text-align: left;
   }
+
   &.-next {
-    float: right;
+    text-align: right;
+    margin-left: auto; // Гарантирует прижатие к правому краю
   }
+
+  &:hover .prevnext_title {
+    color: #2E6DA4;
+    text-decoration: underline;
+  }
+}
+
+.prevnext_label {
+  font-size: 0.8em;
+  color: #888; // Делаем надпись "Назад/Вперед" неброской
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.prevnext_title {
+  font-weight: bold;
+  color: #337AB7; // Синий цвет как у кнопок
+  line-height: 1.2;
 }
 
 .github-ribbon {
